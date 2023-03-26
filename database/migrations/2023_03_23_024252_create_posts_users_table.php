@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('posts_users', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->integer('user_id');
+            $table->integer('post_id');
         });
     }
 
