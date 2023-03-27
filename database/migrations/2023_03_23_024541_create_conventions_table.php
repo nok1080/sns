@@ -16,8 +16,6 @@ return new class extends Migration
         Schema::create('conventions', function (Blueprint $table) {
             $table->id();
             $table->integer('post_id');
-            $table->string('detail_display');
-            $table->string('detail_search');
             $table->string('game_imaage_url');
         });
     }
